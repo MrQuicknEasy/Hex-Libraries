@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Library Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Library Hub</div>
+        <input type="text" id="searchBar" placeholder="Search the catalog...">
+        <button id="loginBtn">Login</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#digital">Digital Resources</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1>Welcome to Andile Zikhali's Library Hub</h1>
+            <p>Discover books, events, and more!</p>
+            <button id="exploreBtn">Explore Now</button>
+        </section>
+
+        <!-- Catalog Section -->
+        <section id="catalog">
+            <h2>Catalog Search</h2>
+            <input type="text" id="catalogSearch" placeholder="Search books...">
+            <div id="catalogResults"></div>
+        </section>
+
+        <!-- User Account Section -->
+        <section id="userAccount" class="hidden">
+            <h2>Your Account</h2>
+            <div id="dashboard">
+                <p><strong>Borrowed:</strong> <span id="borrowedItems">None</span></p>
+                <p><strong>Holds:</strong> <span id="holds">None</span></p>
+                <button id="updateAccount">Update Account</button>
+            </div>
+        </section>
+
+        <!-- Virtual Assistant -->
+        <div id="chatbot">
+            <button id="chatToggle">Chat with Assistant</button>
+            <div id="chatWindow" class="hidden">
+                <div id="chatMessages"></div>
+                <input type="text" id="chatInput" placeholder="Ask me anything...">
+                <button id="sendChat">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Library Hub | Contact: info@libraryhub.org</p>
+        <div class="accessibility">
+            <button id="increaseText">Increase Text Size</button>
+            <button id="highContrast">High Contrast</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
